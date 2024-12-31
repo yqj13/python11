@@ -64,7 +64,7 @@ def draw_chart(url):
         if chart_type == "Word Cloud":
             # 使用 Matplotlib 和 wordcloud 库绘制词云图
             # color_mask = np.array(Image.open("./crow.png"))
-            wc = WC(width=800, height=400, background_color='white', font_path='C:\Windows\Fonts\simsun.ttc')  # 需要指定中文字体路径
+            wc = WC(width=800, height=400, background_color='white', font_path='./simsun.ttc')  # 需要指定中文字体路径
             wc.generate_from_frequencies(filtered_word_counts)
             plt.figure(figsize=(10, 6))
             plt.imshow(wc, interpolation="bilinear")
